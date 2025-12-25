@@ -1,10 +1,18 @@
 🚀 Appian AI Knowledge Assistant
 
-A context-aware AI-powered knowledge retrieval system designed to integrate with Appian case management workflows, enabling support agents to receive just-in-time, verified policy information without leaving their active case screen.
+An AI-powered, context-aware knowledge retrieval system designed to seamlessly integrate with Appian Case Management workflows, enabling support agents to receive just-in-time, verified policy information without leaving their active case screen.
 
 📌 Problem Statement
 
-Support agents working on high-stakes cases (insurance claims, regulatory approvals, compliance reviews) must consult multiple documents such as:
+Organizations using Appian manage high-stakes casework such as:
+
+Insurance claims
+
+Government benefit approvals
+
+Regulatory & compliance reviews
+
+To resolve these cases, agents must consult multiple fragmented sources, including:
 
 Government regulations
 
@@ -12,17 +20,21 @@ Internal policy PDFs
 
 Standard Operating Procedures (SOPs)
 
-Currently, agents manually search these documents outside the Appian workflow, leading to:
+🚨 Current Challenges
+
+Agents manually search documents outside the Appian workflow
 
 Increased Average Handling Time (AHT)
 
 Higher risk of compliance errors
 
-Missed policy updates
+Missed or outdated policy references
 
 💡 Solution Overview
 
-This project introduces an AI Knowledge Assistant that:
+The Appian AI Knowledge Assistant provides proactive, context-aware knowledge retrieval directly within the case workflow.
+
+How it works:
 
 Analyzes live case context (claim type, location, description)
 
@@ -30,49 +42,68 @@ Automatically retrieves the most relevant policy clauses
 
 Displays results with verifiable citations (document name & page number)
 
-The system proactively pushes knowledge instead of relying on manual search.
+✅ No manual searching
+✅ No context switching
+✅ Fully aligned with Appian’s case-first philosophy
 
 🌐 Live Demo (Vercel)
 
-👉 Live Demo:
-🔗 https://your-project-name.vercel.app
+🔗 Live Demo:
+👉 https://appian-case-knowledge-assistant-8h5.vercel.app/
 
-The demo simulates how the AI assistant would function inside an Appian case view by allowing users to input case context and instantly receive relevant, citation-backed policy information.
+The demo simulates how the AI assistant would function inside an Appian case view.
+Users input case details and instantly receive relevant, citation-backed policy information.
 
 🧠 Key Features
-
 🔍 Context-Aware Retrieval
-Understands case attributes such as claim type and jurisdiction.
+
+Understands case attributes such as:
+
+Claim type
+
+State / region
+
+Case description
 
 📄 Verifiable Citations
-Each response includes source document and page reference.
+
+Every policy suggestion includes:
+
+Source document name
+
+Exact page number
+
+Ensures auditability and legal compliance.
 
 ⚡ Just-in-Time Knowledge Delivery
-No manual searching required by agents.
+
+Relevant knowledge is pushed automatically, reducing handling time and cognitive load.
 
 🧩 Appian-Aligned Architecture
-Designed to embed seamlessly within Appian case workflows.
+
+Designed to embed directly within Appian case workflows and dashboards.
 
 🎨 Modern & Professional UI
-Clean dashboard-style interface suitable for enterprise use.
+
+Clean, enterprise-grade dashboard UI suitable for operational teams.
 
 🏗️ System Architecture
 
 Case data is captured from the active workflow
 
-AI processes context using semantic similarity
+AI analyzes context using semantic similarity
 
 Relevant policy snippets are retrieved
 
 Results are displayed with document provenance
 
-This mimics Appian’s low-code + AI-driven automation philosophy.
+This mirrors Appian’s low-code + AI-driven automation approach.
 
 🛠️ Tech Stack
 
 Frontend: React + Tailwind CSS
 
-AI Logic: Semantic search / LLM-based retrieval
+AI Logic: Semantic search–based policy matching
 
 Prototype Platform: bolt.new
 
@@ -82,9 +113,10 @@ Deployment: Vercel
 appian-ai-knowledge-assistant/
 ├── src/
 │   ├── components/
-│   ├── pages/
+│   ├── data/
 │   ├── utils/
-│   └── App.jsx
+│   ├── types/
+│   └── App.tsx
 ├── public/
 ├── README.md
 └── package.json
@@ -93,24 +125,34 @@ appian-ai-knowledge-assistant/
 
 Uses a limited set of sample policy documents
 
-Prototype focuses on retrieval logic and UI experience
+Focuses on retrieval logic and UI experience
 
 Does not include authentication or live Appian APIs
 
-Designed for demonstration and evaluation purposes
+Built as a functional prototype for demonstration purposes
 
 🎯 Future Enhancements
 
-Native Appian plug-in integration
+Native Appian plug-in / SAIL component integration
 
-Support for large-scale document ingestion
+Large-scale document ingestion (PDFs, regulations, SOPs)
 
 Real-time policy update detection
 
-Role-based access control for compliance
+Role-based access control and compliance enforcement
+
+LLM-powered reasoning and summarization
 
 🏁 Conclusion
 
-This project demonstrates how AI-powered, context-aware knowledge retrieval can dramatically improve case handling efficiency, accuracy, and compliance within Appian-powered enterprises.
+This project demonstrates how AI-powered, context-aware knowledge retrieval can significantly improve:
 
-⭐ If you like this project, feel free to star the repo!
+Case resolution speed
+
+Decision accuracy
+
+Regulatory compliance
+
+By embedding intelligence directly into Appian workflows, the Appian AI Knowledge Assistant reduces operational friction and empowers agents to make faster, more informed decisions.
+
+⭐ If you find this project useful, feel free to star the repository!git status
