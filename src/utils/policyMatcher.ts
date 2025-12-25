@@ -1,5 +1,5 @@
 import { PolicyDocument, PolicyResult } from "../types";
-import { knowledgeBase } from "../data/knowledgeBase";
+import { knowledgeBase } from '../data/KnowledgeBase';
 
 function tokenize(text: string): string[] {
   return text
